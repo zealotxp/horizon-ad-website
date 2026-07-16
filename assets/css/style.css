@@ -245,6 +245,28 @@ ul { list-style: none; }
 .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .tag-row span { font-size: 12px; background: var(--sky-soft); color: var(--sky); padding: 4px 10px; border-radius: 999px; }
 
+/* ---------- News list (资讯中心) ---------- */
+.news-list { display: flex; flex-direction: column; gap: 18px; }
+.news-item { background: #fff; border: 1px solid var(--border, #eaeef3); border-radius: 14px; padding: 22px 26px; transition: box-shadow .25s, transform .25s; }
+.news-item:hover { box-shadow: 0 12px 30px rgba(20,40,80,.10); transform: translateY(-3px); }
+.news-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.news-meta time { font-size: 13px; color: var(--muted); }
+.news-cat { font-size: 12px; font-weight: 800; padding: 3px 10px; border-radius: 6px; color: #fff; }
+.cat-policy { background: linear-gradient(135deg, #2f7df6, #1f5fd0); }
+.cat-event { background: linear-gradient(135deg, #ff8a3d, #ff6a00); }
+.cat-region { background: linear-gradient(135deg, #21b58a, #128a68); }
+.news-item h3 { font-size: 18px; color: var(--navy); margin: 0 0 8px; line-height: 1.5; }
+.news-item h3 a { color: inherit; text-decoration: none; }
+.news-item h3 a:hover { color: var(--orange); }
+.news-item p { color: var(--muted); font-size: 14px; margin: 0; line-height: 1.75; }
+
+/* ---------- About: scope list & cert note ---------- */
+.scope-list { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-direction: column; gap: 12px; }
+.scope-list li { position: relative; padding-left: 24px; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.scope-list li::before { content: "📍"; position: absolute; left: 0; top: 0; }
+.cert-note { text-align: center; color: var(--muted); font-size: 13px; margin: 22px 0 0; opacity: .85; }
+.t-name { margin-top: 14px; font-weight: 700; color: var(--navy); font-size: 14px; }
+
 /* ---------- Feature/service split ---------- */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
 .split .visual { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); aspect-ratio: 4/3; }

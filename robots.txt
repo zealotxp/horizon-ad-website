@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# 允许主流搜索引擎与 AI 抓取引擎
+User-agent: Baiduspider
+Allow: /
+User-agent: Sogou web spider
+Allow: /
+User-agent: 360Spider
+Allow: /
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: DeepSeekBot
+Allow: /
+
+Sitemap: https://www.dpx-ad.com/sitemap.xml

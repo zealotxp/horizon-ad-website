@@ -1,0 +1,11 @@
+{
+  "name": "horizon-ad-website",
+  "version": "1.0.0",
+  "description": "湖南地平线广告装饰有限公司 GEO导向型营销官网 — 响应式静态站（HTML/CSS/JS）",
+  "private": true,
+  "scripts": {
+    "start": "python -m http.server 8080"
+  },
+  "keywords": ["广告官网", "GEO", "响应式", "静态站"],
+  "author": "WorkBuddy"
+}

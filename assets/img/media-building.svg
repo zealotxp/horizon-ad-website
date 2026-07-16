@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="楼宇媒体">
+  <defs>
+    <linearGradient id="bbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1e3a"/><stop offset="1" stop-color="#163b6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bbg)"/>
+  <g fill="#0a1830"><rect x="60" y="120" width="120" height="280"/><rect x="460" y="90" width="130" height="310"/></g>
+  <rect x="250" y="60" width="150" height="340" fill="#12294d" stroke="#2f6fed" stroke-width="2"/>
+  <g fill="#ffd27a" opacity="0.6">
+    <rect x="80" y="150" width="14" height="14"/><rect x="110" y="150" width="14" height="14"/><rect x="140" y="150" width="14" height="14"/>
+    <rect x="80" y="190" width="14" height="14"/><rect x="140" y="190" width="14" height="14"/>
+    <rect x="480" y="130" width="16" height="16"/><rect x="520" y="130" width="16" height="16"/><rect x="560" y="130" width="16" height="16"/>
+  </g>
+  <rect x="270" y="120" width="110" height="160" rx="6" fill="url(#bbg)"/>
+  <rect x="270" y="120" width="110" height="160" rx="6" fill="none" stroke="#ff6a13" stroke-width="3"/>
+  <text x="325" y="205" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="800" fill="#ff9b3d" text-anchor="middle">楼宇</text>
+  <text x="325" y="232" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="800" fill="#ff9b3d" text-anchor="middle">电梯媒体</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="高速公路大牌">
+  <defs>
+    <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f6fed"/><stop offset="1" stop-color="#a9c6ff"/>
+    </linearGradient>
+    <linearGradient id="hbrd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b1e3a"/><stop offset="1" stop-color="#12294d"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#hsky)"/>
+  <path d="M0 400 L0 300 L640 260 L640 400 Z" fill="#31415c"/>
+  <path d="M60 400 L200 300 L240 300 L120 400 Z" fill="#ffd27a" opacity="0.7"/>
+  <path d="M300 400 L380 300 L410 300 L360 400 Z" fill="#ffd27a" opacity="0.7"/>
+  <rect x="150" y="120" width="18" height="200" fill="#1b2536"/>
+  <rect x="472" y="120" width="18" height="200" fill="#1b2536"/>
+  <rect x="120" y="60" width="400" height="120" rx="8" fill="url(#hbrd)" stroke="#ff6a13" stroke-width="4"/>
+  <text x="320" y="120" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="30" font-weight="800" fill="#fff" text-anchor="middle">高速公路擎天柱</text>
+  <text x="320" y="152" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="15" fill="#ffb547" text-anchor="middle">日均车流 12万+</text>
+</svg>

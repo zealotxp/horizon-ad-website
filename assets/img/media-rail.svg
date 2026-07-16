@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="高铁站媒体">
+  <defs>
+    <linearGradient id="rbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12294d"/><stop offset="1" stop-color="#2f6fed"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#rbg)"/>
+  <rect x="0" y="70" width="640" height="60" fill="#0b1e3a" opacity="0.55"/>
+  <text x="40" y="108" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="800" fill="#ffb547">永州站 · 候车厅媒体</text>
+  <g fill="#0a1830" opacity="0.6"><rect x="0" y="300" width="640" height="100"/></g>
+  <g stroke="#7fa8f0" stroke-width="3" opacity="0.5"><line x1="0" y1="330" x2="640" y2="330"/><line x1="0" y1="360" x2="640" y2="360"/></g>
+  <rect x="120" y="180" width="400" height="110" rx="10" fill="#fff" opacity="0.95"/>
+  <rect x="132" y="192" width="376" height="86" rx="6" fill="url(#rbg)"/>
+  <text x="320" y="242" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="800" fill="#fff" text-anchor="middle">高铁品牌广告</text>
+  <g fill="#ffb547"><circle cx="150" cy="170" r="5"/><circle cx="490" cy="170" r="5"/></g>
+  <path d="M60 300 h60 v-10 h-60 z" fill="#c9d8f5"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="房地产开盘案例">
+  <defs><linearGradient id="c1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1e3a"/><stop offset="1" stop-color="#2f6fed"/></linearGradient></defs>
+  <rect width="600" height="400" fill="url(#c1)"/>
+  <g fill="#0a1830" opacity="0.6"><rect x="40" y="140" width="90" height="260"/><rect x="150" y="90" width="90" height="310"/><rect x="360" y="120" width="90" height="280"/><rect x="470" y="170" width="90" height="230"/></g>
+  <rect x="210" y="180" width="180" height="60" rx="8" fill="#ff6a13"/>
+  <text x="300" y="219" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="800" fill="#fff" text-anchor="middle">品牌开盘</text>
+  <text x="300" y="300" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="16" fill="#ffd27a" text-anchor="middle">全城霸屏 · 一小时售罄</text>
+</svg>

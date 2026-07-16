@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="汽车品牌案例">
+  <defs><linearGradient id="c4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f6fed"/><stop offset="1" stop-color="#0b1e3a"/></linearGradient></defs>
+  <rect width="600" height="400" fill="url(#c4)"/>
+  <rect x="140" y="200" width="320" height="70" rx="35" fill="#fff" opacity="0.12"/>
+  <rect x="180" y="150" width="240" height="70" rx="10" fill="#ffb547"/>
+  <text x="300" y="196" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="800" fill="#0b1e3a" text-anchor="middle">汽车上市</text>
+  <text x="300" y="300" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="16" fill="#cfe0ff" text-anchor="middle">高速+高铁联动 · 曝光3000万</text>
+</svg>

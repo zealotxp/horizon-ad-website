@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="企业资质证书">
+  <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffaf2"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+  <rect width="300" height="400" fill="url(#cg)"/>
+  <rect x="20" y="20" width="260" height="360" fill="none" stroke="#ff9b3d" stroke-width="3"/>
+  <rect x="30" y="30" width="240" height="340" fill="none" stroke="#ffd27a" stroke-width="1"/>
+  <circle cx="150" cy="120" r="46" fill="none" stroke="#ff6a13" stroke-width="4"/>
+  <path d="M150 88 l9 22 24 2 -18 16 6 24 -21 -13 -21 13 6 -24 -18 -16 24 -2 z" fill="#ff6a13"/>
+  <rect x="70" y="200" width="160" height="10" rx="5" fill="#e7ecf3"/>
+  <rect x="90" y="230" width="120" height="8" rx="4" fill="#eef2f8"/>
+  <rect x="90" y="252" width="120" height="8" rx="4" fill="#eef2f8"/>
+  <circle cx="220" cy="320" r="34" fill="none" stroke="#ff6a13" stroke-width="3" opacity="0.6"/>
+  <text x="220" y="326" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="800" fill="#ff6a13" text-anchor="middle" opacity="0.8">认证</text>
+</svg>

@@ -50,7 +50,20 @@
     initSmoothTop();
     bindPhoneLinks();
     bindNavigateLinks();
+    initHeaderScroll();
   });
+
+  /* ---------- 顶部导航滚动阴影 ---------- */
+  function initHeaderScroll() {
+    var header = document.querySelector(".site-header");
+    if (!header) return;
+    var onScroll = function () {
+      if (window.scrollY > 12) header.classList.add("scrolled");
+      else header.classList.remove("scrolled");
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
 
   /* ---------- 移动端导航 ---------- */
   function initNavToggle() {

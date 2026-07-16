@@ -12,9 +12,35 @@
     lat: 26.4200,                // 永州公司坐标（示例）
     lng: 111.6130,
     name: "湖南地平线广告装饰有限公司",
-    address: "湖南省永州市冷水滩区梧桐路地平线广告大厦"
+    address: "湖南省永州市冷水滩区梧桐路地平线广告大厦",
+    leadEndpoint: "",            // 留资接收端点：填你的后端API，或 Formspree/Web3Forms 等表单服务URL（留空则回退邮件）
+    leadEmail: "service@dpx-ad.com" // 预留邮箱（未配置端点时，提交会生成发送至该邮箱的邮件草稿）
   };
   window.HORIZON_CONFIG = CONFIG;
+
+  /* 留资自动发送：后台/表单服务端点优先；未配置则回退至预留邮箱(mailto) */
+  function sendLead(payload) {
+    var c = window.HORIZON_CONFIG;
+    // 方式A：配置了后端API或表单服务(Formspree/Web3Forms等) → 真实POST，数据进入后台/邮箱
+    if (c.leadEndpoint) {
+      fetch(c.leadEndpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(payload)
+      }).catch(function () { /* 失败也已本地备份，忽略 */ });
+      return;
+    }
+    // 方式B：未配端点时，回退至预留邮箱（打开邮件草稿，数据落入预留邮箱）
+    if (c.leadEmail) {
+      var subj = encodeURIComponent("【官网留资】" + payload.name + " / " + payload.type);
+      var body = encodeURIComponent(
+        "姓名：" + payload.name + "\n电话：" + payload.phone +
+        "\n需求类型：" + payload.type + "\n备注：" + (payload.message || "无") +
+        "\n来源页面：" + payload.page + "\n提交时间：" + payload.ts
+      );
+      window.location.href = "mailto:" + c.leadEmail + "?subject=" + subj + "&body=" + body;
+    }
+  }
 
   document.addEventListener("DOMContentLoaded", function () {
     initNavToggle();
@@ -92,16 +118,15 @@
 
     var payload = { name: name, phone: phone, type: type, message: msg, ts: new Date().toISOString(), page: location.pathname };
 
-    /* === 数据发送（预留后台 / 邮箱接口）=== 
-       生产环境请对接后端接口，例如：
-       fetch('/api/lead', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload)})
-       或使用邮件服务（如腾讯云SES / 阿里云邮件推送）转发至预留邮箱。
-    */
+    // 1) 本地备份（离线不丢失）
     try {
       var store = JSON.parse(localStorage.getItem("horizon_leads") || "[]");
       store.push(payload);
       localStorage.setItem("horizon_leads", JSON.stringify(store));
     } catch (err) {}
+
+    // 2) 自动发送至后台 / 预留邮箱（真实网络请求）
+    sendLead(payload);
 
     // 展示成功态
     var overlay = f.closest(".modal-overlay");

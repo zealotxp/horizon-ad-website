@@ -239,6 +239,9 @@ ul { list-style: none; }
 .case-card .client { font-size: 13px; color: var(--orange); font-weight: 700; letter-spacing: 1px; }
 .case-card h3 { font-size: 19px; color: var(--navy); margin: 6px 0 8px; }
 .case-card p { color: var(--muted); font-size: 14px; }
+.case-card .solution { margin-top: 10px; position: relative; }
+.case-card .sol-label { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 1px; color: #fff; background: linear-gradient(135deg, var(--orange), var(--amber)); padding: 3px 10px; border-radius: 6px; margin-bottom: 8px; }
+.case-card .solution p { margin: 0; line-height: 1.7; }
 .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .tag-row span { font-size: 12px; background: var(--sky-soft); color: var(--sky); padding: 4px 10px; border-radius: 999px; }
 
